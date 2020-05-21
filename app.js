@@ -34,7 +34,7 @@ app.post('/contact/send',(req,res)=>{
         service:'gmail',
         auth:{
             user:'excellencecoding@gmail.com',
-            pass:'*kumar123456*'
+            pass:'plz entr your password '
         }
     });
 
