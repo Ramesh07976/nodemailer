@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title HOME
+    link(rel='stylesheet', href='stylesheet/bootstrap.css')
+    style.
+      .catlog{
+      height: 400px;
+      text-align: center;
+      }
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#') first-Project
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/about')
+              | About 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/contact')
+              | contact 
+              span.sr-only (current)
+              
+
+block content
+
+    .container.text-center(style='background-color: rgba(113, 224, 187, 0.521); height: 300px;')
+      .row
+        div(style='background-color: rgba(139, 241, 80, 0.521); width: 100%;')
+          h3 #{top_heading}
+        p(style='text-align: justify; padding: 20px;')
+          | A computer is a machine that can be instructed to carry out
+          | sequences of arithmetic or logical operations automatically via computer programming. Modern computers
+          | have the ability to follow generalized sets of operations, called programs. These programs enable
+          | computers to perform an extremely wide range of tasks. 
+          br
+          br
+          button.btn.btn-primary(type='button') Learn More >>
+    br
+    .container
+      .row
+        .col-md-4.border.border-info.border-right-0.catlog
+          h4 Virus Remove
+          hr
+          p(style='text-align: justify;')
+            | A computer virus is a type of computer program that,
+            | when executed, replicates itself by modifying other
+            | computer programs and inserting its own code.
+            | When this replication succeeds, the affected areas are
+            | then said to be "infected" with a computer virus.
+        .col-md-4.border.border-info.border-right-0
+          h4 Hardware issues
+          hr
+          p
+            b How to fix Windows 10 display problems
+            br
+            |              Their display drivers - this has proven to be a successful fix in most cases. Plus, it's a relatively simple process to follow.
+            |             If you're not familiar with how to do this, first head to the Device Manager.
+        .col-md-4.border.border-info
+          h4 Software issues
+          hr
+          p
+            | A software bug is an error, flaw or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways. The process of finding and fixing bugs is termed "debugging" and often uses formal techniques or tools to pinpoint bugs, and since the 1950s
